@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "ai": "^2.1.27",
+    "ignore": "^5.2.4",
+    "langchain": "^0.0.118",
     "next": "13.4.12",
     "openai-edge": "^1.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7"
   },
   "devDependencies": {
     "@types/node": "20.4.5",
@@ -25,6 +28,7 @@
     "eslint-config-whiteroom": "^3.3.0",
     "postcss": "8.4.27",
     "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "zod": "^3.21.4"
   }
 }
