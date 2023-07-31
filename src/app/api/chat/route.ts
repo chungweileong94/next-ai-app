@@ -24,7 +24,12 @@ export async function POST(req: Request) {
 
   const loader = new GithubRepoLoader(
     "https://github.com/chungweileong94/server-act",
-    { branch: "main", recursive: true, unknown: "warn" }
+    {
+      branch: "main",
+      recursive: true,
+      unknown: "warn",
+      ignorePaths: [".github", ".vscode", ".changeset"],
+    }
   );
   const docs = await loader.load();
   const textSplitter = new RecursiveCharacterTextSplitter({

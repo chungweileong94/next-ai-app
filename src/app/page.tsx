@@ -7,8 +7,8 @@ export default function Home() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
 
   return (
-    <div className="w-screen h-screen flex flex-col p-4">
-      <div className="flex-1 w-full">
+    <div className="w-screen h-screen flex flex-col p-4 gap-2">
+      <div className="flex-1 w-full overflow-y-auto">
         {messages.map((m) => (
           <div key={m.id} className="flex flex-row flex-nowrap p-2 gap-2">
             <div className="w-20 font-bold">
